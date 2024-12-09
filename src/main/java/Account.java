@@ -16,6 +16,10 @@ public abstract class Account implements Persistable {
     protected double minimumBalance;
     protected double belowMinimumFee;
 
+    public void setBalance(double _balance) {
+        balance = _balance;
+    }
+
     // This is kind of a hack to get around having to add Register
     // to every call to new Account()
     public static void useSharedRegister(Register register) {
