@@ -23,6 +23,10 @@ public record RegisterEntry(long id, long accountId, String entryName, double am
         return id;
     }
 
+    public Date getDate() {
+        return date;
+    }
+
     @Override
     public String[] columns() {
         return COLUMNS;
